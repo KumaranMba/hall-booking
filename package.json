@@ -1,0 +1,27 @@
+{
+  "name": "day38",
+  "version": "1.0.0",
+  "description": "A simple web server for hall-booking",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KumaranMba/hall-booking.git"
+  },
+  "author": "Dinesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KumaranMba/hall-booking/issues"
+  },
+  "homepage": "https://github.com/KumaranMba/hall-booking#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
