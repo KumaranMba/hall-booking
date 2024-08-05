@@ -51,19 +51,29 @@ let customers = [{
 }];
 
 // To view all the rooms and details
-
 app.get('/rooms/all',(request,response)=>{
     response.status(200).json({rooms});
 });
 
 // API endpoint for creating room
-app.post('/rooms/create',(request,respone)=>{
+app.post('/rooms/create',(request,response)=>{
     const room = request.body;
-    console.log(request.body);
+    const idExists = rooms.find((el)=>el.roomId == room.roomId);
+    if(idExists){
+        response.status(400).json({message:"room already exits"});
+    }else{
+        rooms.push(room);
+        response.status(200).json({message:"room created successfully"});
+    }      
 
 });
 
+// API endpoint
+app.get('/',(request,response)=>{
+    response.send('Welcome to Hotel Booking API');
+})
 
+//Localhost and port number
 const HOSTNAME = '127.0.0.1';
 const PORT = 3001;
 
