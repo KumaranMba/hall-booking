@@ -6,6 +6,10 @@ const app = express();
 // middleware
 app.use(express.json());
 
+/*
+    postman documentation url- https://documenter.getpostman.com/view/29191667/2sA3s9DohD
+
+*/
 
 // creating variables for storing data
 
