@@ -11,14 +11,12 @@ app.use(express.json());
 
 let rooms = [{
     "roomId":"R101",
-    "roomName":"Deluxe & Superior Room",
     "seatsAvaliable":2,
     "Amenities in room": ["tv","ac","geyser","Hair dryer"],
-    'pricePerHr':100
+    "pricePerHr":100
 },
 {
     "roomId":"R201",
-    "roomName": "Executive Room",
     "seatsAvaliable":3,
     "Amenities in room": ["tv","ac","geyser","Hair dryer"],
     "pricePerHr":150
@@ -29,7 +27,6 @@ let bookings = [{
     "bookingDate":"2023/08/03",
     "startTime":"12.00pm",
     "endTime":"11.59am",
-    "roomName":"Deluxe & Superior Room",
     "roomId":"R101",
     "status":"booked",
     "booked_On":"2023/08/25",
@@ -43,7 +40,6 @@ let customers = [{
         "bookingDate":"2023/08/03",
         "startTime":"12.00pm",
         "endTime":"11.59am",
-        "roomName":"Deluxe & Superior Room",
         "roomId":"R101",
         "status":"booked",
         "booked_On":"2023/08/25",
